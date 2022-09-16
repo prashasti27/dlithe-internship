@@ -1,0 +1,59 @@
+<!-- Using a REST API -->
+<!-- We will be using a free service called JSONPlaceholder to retrieve JSON data and test our code. 
+We can create a function to make a GET request to retrieve users data  -->
+<!-- <button (click)="readData()">GET Users</button>
+<ul>
+    <li *ngFor="let num of var1">
+    {{num.username}} - {{num.address.city}}
+    </li>
+</ul> -->
+<!-- iterate through all the JSON data from the local JSON file sample.json -->
+<!--for(int i=0;i<7;i++)
+   <div *ngFor="let item of course">
+        <div class ="row">
+             <div class="col-lg-3">
+                <img [src]="item.img">
+            </div> 
+            <div class="card col-lg-12  " style="margin-top: 10px;">
+                <div class="card-body col-lg-12">
+                    <div class="row" style="border: solid;border-color: rgb(8, 8, 8);margin-top: 50px;">
+                        <div class="col-lg-3">
+                            
+                            <img [src]="item.img">
+                        </div>
+                        <div class="col-lg-9" style="margin-top: 20px;">
+                            <div class="data">
+                              <p>{{item.name | uppercase}}</p>
+                            </div>
+                            <div class="data">
+                                <p>{{item.description | uppercase}}</p>
+                                <hr>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>-->
+<div class="d-flex flex-row">
+   <div *ngFor="let item of course">
+      
+    <div class="row card" >
+          <div  >
+            <img src="{{item.img}}" class="card-img" alt="...">
+          </div>
+          
+          <div >
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <a href={{item.links}}>hello</a>
+           </div>
+           </div>
+           </div>
+  </div>
+</div>
+<!---card="col-md-3"
+      class="col-md-9"-->
